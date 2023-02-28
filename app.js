@@ -9,6 +9,7 @@
     });
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
+        console.log('hel')
     })
 })();
 
@@ -29,19 +30,8 @@
 // }
 
 
-const trialByFire = document.getElementById('trial-by-fire');
-const readyToRob = document.getElementById('ready-to-rob');
-const villageRevenger= document.getElementById('village-revenger');
-const villageProtector = document.getElementById('village-protector');
-const theDarkCave = document.getElementById('the-dark-cave');
-const futureMision = document.getElementById('future-mission');
-const viewMore = document.getElementsByClassName('btn-hover');
-const trialbyfireClass = document.getElementsByClassName('TrialByFire')
 
 
 
-function change() {
-    window.open('TrialByFire.html', '_self');
-}
 
-trialByFire.addEventListener('click', change);
+

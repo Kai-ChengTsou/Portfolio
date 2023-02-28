@@ -180,47 +180,7 @@ section {
 
 
 
-.controls2 {
-  position: fixed;
-  z-index: 10;
-  top: 50%;
-  right: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-}
-.controls2 .control {
-  padding: 1rem;
-  cursor: pointer;
-  background-color: var(--color-grey-4);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.7rem 0;
-  box-shadow: var(--box-shadow-1);
-}
-.controls2 .control i {
-  font-size: 1.2rem;
-  color: var(--color-grey-2);
-  pointer-events: none;
-}
-.controls2 .control div {
-  font-size: 1.2rem;
-  color: var(--color-grey-2);
-  pointer-events: none;
-}
-.controls2 .active-btn {
-  background-color: var(--color-secondary);
-  transition: all 0.4s ease-in-out;
-}
-.controls2 .active-btn i {
-  color: var(--color-white);
-}
+
 
 .theme-btn {
   top: 5%;
@@ -832,7 +792,7 @@ section {
     width: 90%;
   }
 
-  .controls .controls2{
+  .controls{
     top: auto;
     bottom: 0;
     flex-direction: row;
@@ -842,7 +802,21 @@ section {
     width: 100%;
     background-color: var(--color-grey-5);
   }
-  .controls .control .controls2{
+  .controls .control{
+    margin: 1rem 0.3rem;
+  }
+
+  .controls2{
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls2 .control{
     margin: 1rem 0.3rem;
   }
 
@@ -1063,151 +1037,6 @@ section {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
-
-/*projects*/
-
-/* .projects{
-  text-align: center;
-}
-
-
-
-.game-title{
-  font-size: 60px;
-  margin-top: 30px;
-  text-shadow: -2px 2px 1px rgb(109, 204, 236);
-}
-
-.intro{
-  margin: 20px 200px;
-  line-height: 40px;
-  text-align: start;
-}
-
-.game-title span{
-  color: var(--color-secondary);
-  text-shadow: -2px 2px 1px rgb(250, 250, 250);
-}
-
-.projects-main{
-  margin:30px auto;
-}
-
-.projects-img{
-  margin-top: 40px;
-  max-width: 600px;
-  max-height: 400px;
-}
-
-.projects-explain1{
-  width: 600px;
-  margin-left: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-top: 40px;
-}
-
-.projects-explain2{
-  width: 400px;
-  margin-right: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-top: 40px;
-}
-
-.inside{
-  border-top: 1px solid var(--color-white) ;
-  padding-top: 30px;
-  margin: 100px 100px;
-  display: flex;
-  justify-content: center;
-  max-height: 800px;
-}
-
-.explain-main{
-  text-align: start;
-  line-height: 40px;
-}
-
-.explain-title{
-  margin-top: 30px;
-  margin-bottom: 20px;
-
-}
-
-
-
-.back{
-  margin-top: 50px;
-}
-
-#villageprotectorbutton{
-  margin-top: 100px;
-}
-
-.audio-component{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.audio-component-left{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
-}
-
-
-.audio-component-left audio{
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.audio-component-right{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
-  margin-right: 50px;
-}
-
-.audio-component-right audio{
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#skilllevel-img{
-  margin-top: 50px;
-}
-
-#maze{
-  margin-bottom: 0;
-}
-
-#maze-img{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(161, 9, 9);
-}
-
-#maze-explain{
-  margin-top: 150px ;
-}
-
-#laser-explain{
-  margin-top: 100px;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 
 
 .btn-hover {
@@ -1229,6 +1058,7 @@ section {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+
 
 .btn-hover:hover {
   background-position: 100% 0;
@@ -1252,4 +1082,4 @@ section {
   box-shadow: 0 4px 15px 0 var(--color-btn10);
   height: 50px;
   margin-bottom: 50px;
-} */
+} 

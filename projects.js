@@ -7,35 +7,70 @@
             document.getElementById(button.dataset.id).classList.add("active");
         })
     });
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    })
 })();
 
+const projectsBtn = document.getElementsByClassName('btn-hover')
 
-const trialByFire = document.getElementById('trial-by-fire');
-const readyToRob = document.getElementById('ready-to-rob');
-const villageRevenger= document.getElementById('village-revenger');
-const villageProtector = document.getElementById('village-protector');
-const theDarkCave = document.getElementById('the-dark-cave');
-const futureMision = document.getElementById('future-mission');
+const trialByFireBtn = document.getElementById('trialbyfire-btn');
+const trialByFirePage = document.getElementById('TrialByFire');
+const readyToRobBtn = document.getElementById('readytorob-btn');
+const readyToRobPage = document.getElementById('ReadyToRob');
+const villageRevengerBtn = document.getElementById('villagerevenger-btn');
+const villageRevengerPage = document.getElementById('VillageRevenger');
+const villageProtectorBtn = document.getElementById('villageprotector-btn');
+const villageProtectorPage = document.getElementById('VillageProtector');
+const theDarkCaveBtn = document.getElementById('thedarkcave-btn');
+const theDarkCavePage = document.getElementById('TheDarkCave');
+const futureMissionBtn = document.getElementById('futuremission-btn');
+const futureMissionPage = document.getElementById('FutureMission');
 
-trialByFire.addEventListener('click', function() {
-    document.querySelector(".active-btn").classList.remove("active-btn");
-    this.classList.add("active-btn");
+
+
+
+trialByFireBtn.addEventListener('click', function(){
     document.querySelector(".active").classList.remove("active");
-    document.getElementById(button.dataset.id).classList.add("active");
-})
-
-function projectControl(){
-    const projectControl = document.querySelector(".controls2");
-    projectControl.style.display =  'none';
-}
-
-function change(){
+    trialByFirePage.classList.add('active');
     document.querySelector(".controls2").style.display = 'block';
     document.querySelector(".controls").style.display = 'none';
-    window.open('TrialByFire.html', '_self');
-}
+})
+readyToRobBtn.addEventListener('click', function(){
+    document.querySelector(".active").classList.remove("active");
+    readyToRobPage.classList.add('active');
+    document.querySelector(".controls2").style.display = 'block';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
+    document.querySelector('#ready-to-rob-btn').classList.add("active-btn");
+})
+villageRevengerBtn.addEventListener('click', function(){
+    document.querySelector(".active").classList.remove("active");
+    villageRevengerPage.classList.add('active');
+    document.querySelector(".controls2").style.display = 'block';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
+    document.querySelector('#village-revenger-btn').classList.add("active-btn");
+})
+villageProtectorBtn.addEventListener('click', function(){
+    document.querySelector(".active").classList.remove("active");
+    villageProtectorPage.classList.add('active');
+    document.querySelector(".controls2").style.display = 'block';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
+    document.querySelector('#village-protector-btn').classList.add("active-btn");
+})
+theDarkCaveBtn.addEventListener('click', function(){
+    document.querySelector(".active").classList.remove("active");
+    theDarkCavePage.classList.add('active');
+    document.querySelector(".controls2").style.display = 'block';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
+    document.querySelector('#the-dark-cave-btn').classList.add("active-btn");
+})
+futureMissionBtn.addEventListener('click', function(){
+    document.querySelector(".active").classList.remove("active");
+    futureMissionPage.classList.add('active');
+    document.querySelector(".controls2").style.display = 'block';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
+    document.querySelector('#future-mission-btn').classList.add("active-btn");
+})
 
-// viewMore.addEventListener('click', change);
