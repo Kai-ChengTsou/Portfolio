@@ -23,54 +23,52 @@ const theDarkCaveBtn = document.getElementById('thedarkcave-btn');
 const theDarkCavePage = document.getElementById('TheDarkCave');
 const futureMissionBtn = document.getElementById('futuremission-btn');
 const futureMissionPage = document.getElementById('FutureMission');
+const controlElement = document.querySelector('.control')
 
 
-
-
-trialByFireBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    trialByFirePage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
+trialByFireBtn.addEventListener('click', ()=>{
+    change(trialByFirePage, '#trial-by-fire-btn')
 })
+
 readyToRobBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    readyToRobPage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
-    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
-    document.querySelector('#ready-to-rob-btn').classList.add("active-btn");
+    change(readyToRobPage, '#ready-to-rob-btn')
 })
+
 villageRevengerBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    villageRevengerPage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
-    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
-    document.querySelector('#village-revenger-btn').classList.add("active-btn");
+    change(villageRevengerPage, '#village-revenger-btn')
 })
+
 villageProtectorBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    villageProtectorPage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
-    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
-    document.querySelector('#village-protector-btn').classList.add("active-btn");
+    change(villageProtectorPage, '#village-protector-btn')
 })
+
 theDarkCaveBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    theDarkCavePage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
-    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
-    document.querySelector('#the-dark-cave-btn').classList.add("active-btn");
+    change(theDarkCavePage, '#the-dark-cave-btn')
 })
+
 futureMissionBtn.addEventListener('click', function(){
-    document.querySelector(".active").classList.remove("active");
-    futureMissionPage.classList.add('active');
-    document.querySelector(".controls2").style.display = 'block';
-    document.querySelector(".controls").style.display = 'none';
-    document.querySelector("#trial-by-fire-btn").classList.remove("active-btn");
-    document.querySelector('#future-mission-btn').classList.add("active-btn");
+    change(futureMissionPage, '#future-mission-btn')
 })
+function change(name, btnName){
+    document.querySelector(".active").classList.remove("active");
+    name.classList.add('active');
+    document.querySelector(".controls2").style.display = 'flex';
+    document.querySelector(".controls").style.display = 'none';
+    document.querySelector(".active-btn").classList.remove("active-btn");
+    document.querySelector(btnName).classList.add("active-btn");
+}
+
+
+const portfolioPage = document.getElementById('portfolio')
+
+function back() {
+    document.querySelector(".active").classList.remove("active");
+    portfolioPage.classList.add('active');
+    document.querySelector(".controls").style.display = 'flex';
+    document.querySelector(".controls2").style.display = 'none';
+    document.querySelector(".active-btn").classList.remove("active-btn");
+    document.querySelector("#portfolio-btn").classList.add("active-btn");
+  };
+
+
 

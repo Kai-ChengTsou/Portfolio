@@ -676,9 +676,6 @@ section {
   justify-content: flex-start;
 }
 
-.right-contact{
-  background: #04befe;
-}
 
 /*Independed components*/
 .btn-con {
@@ -756,9 +753,21 @@ section {
   padding-left: 0;
 }
 
+iframe{
+  filter: grayscale(30%) invert(90%);
+}
+
 @media screen and (max-width: 600px) {
   header {
     padding: 0 !important;
+  }
+
+  .contact-icons{
+    margin-left: 20px;
+  }
+  
+  .btn-con {
+    align-self: center;
   }
 
   .theme-btn {
@@ -805,20 +814,9 @@ section {
   .controls .control{
     margin: 1rem 0.3rem;
   }
-
-  .controls2{
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls2 .control{
-    margin: 1rem 0.3rem;
-  }
+   
+  
+  
 
   .about-container {
     grid-template-columns: repeat(1, 1fr);
@@ -903,6 +901,10 @@ section {
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
+
+  iframe{
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 1432px) {
   .container {
@@ -933,6 +935,10 @@ section {
   .main-title h2 .bg-text {
     font-size: 5.5rem;
   }
+
+  iframe{
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 1250px) {
   .blogs {
@@ -947,6 +953,10 @@ section {
   .header-content .right-header {
     padding-right: 9rem;
   }
+
+  iframe{
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 660px) {
   .blogs {
@@ -955,6 +965,9 @@ section {
 
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
+  }
+  iframe{
+    width: 80vw;
   }
 }
 @media screen and (max-width: 1070px) {
@@ -973,6 +986,9 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4.5rem;
+  }
+  iframe{
+    width: 80vw;
   }
 }
 @media screen and (max-width: 970px) {
@@ -1007,6 +1023,9 @@ section {
     font-size: 2.5rem !important;
     text-align: center;
     padding-top: 3rem;
+  }
+  iframe{
+    width: 80vw;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1072,10 +1091,7 @@ section {
   outline: none;
 }
 
-.btn-hover.color-9 {
-  background-image: linear-gradient(to right, var(--color-btn1), var(--color-btn2), var(--color-btn3), var(--color-btn4));
-  box-shadow: 0 4px 15px 0 var(--color-btn5);
-}
+
 
 .btn-hover.color-8 {
   background-image: linear-gradient(to right, var(--color-btn6), var(--color-btn7), var(--color-btn8), var(--color-btn9));
