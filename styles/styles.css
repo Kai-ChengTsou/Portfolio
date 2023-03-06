@@ -31,6 +31,7 @@
   --color-btn10: rgba(45, 54, 65, 0.75);
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --fliter: grayscale(30%) invert(90%);
 }
 
 .light-mode {
@@ -753,8 +754,8 @@ section {
   padding-left: 0;
 }
 
-iframe{
-  filter: grayscale(30%) invert(90%);
+.map{
+  filter: var(--fliter);
 }
 
 @media screen and (max-width: 600px) {
